@@ -25,7 +25,7 @@ Sb = zeros(row, row);
 
 for i=1:max(c)
     % xC is the matrix containing all the images of a particular folder 
-    xC = X(:,find(y==i));
+    xC = X(:,find(c==i));
     muC = mean(xc,2);
     % center data
     xC = xC - kron(mu, ones([1 size(xC,2)]));
